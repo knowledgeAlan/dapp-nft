@@ -21,6 +21,17 @@ https://github.com/knowledgeAlan/dapp-nft/assets/5988231/3e5c6041-72c7-4ee4-8cbf
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 **Check out the following resources**
 NFT storage [https://nft.storage/]
 Testnets [https://testnets.opensea.io/]
