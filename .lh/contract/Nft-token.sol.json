@@ -1,0 +1,18 @@
+{
+    "sourceFile": "contract/Nft-token.sol",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1704187159095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1704187159095,
+            "name": "Commit-0",
+            "content": "// SPDX-License-Identifier: GPL-3.0\n\npragma solidity >= 0.8.18;\nimport \"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\ncontract ZcdNftToken is ERC721URIStorage,Ownable(msg.sender) {\n\n    event mintTokenEvent(address sender,uint256 tokenId,string uri);\n\n    constructor() ERC721(\"Zcd Lion\",\"ZGH\") {\n        \n    }\n\n\n    function mint(address _to,uint256 _tokenId,string calldata _uri) external onlyOwner {\n\n        _mint(_to,_tokenId);\n        _setTokenURI(_tokenId,_uri);\n        \n        \n        emit mintTokenEvent(_to,_tokenId,_uri);    \n    }\n\n}"
+        }
+    ]
+}

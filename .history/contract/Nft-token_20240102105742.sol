@@ -7,7 +7,7 @@ contract ZcdNftToken is ERC721URIStorage,Ownable(msg.sender) {
 
     event mintTokenEvent(address sender,uint256 tokenId,string uri);
 
-    constructor() ERC721("Zcd Lion","ZGH") {
+    constructor() ERC721("Zcd grasshopper","ZGH") {
         
     }
 
